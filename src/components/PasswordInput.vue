@@ -1,7 +1,7 @@
 <template>
   <label :for="name">{{ caption }}</label>
-  <input class="input is-primary" type="password" :name="name" :id="name"
-         minlength="8" maxlength="64" required>
+  <input class="input" type="password" :name="name" :id="name"
+         minlength="8" maxlength="32" required>
 </template>
 
 <script>

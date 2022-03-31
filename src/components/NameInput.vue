@@ -1,6 +1,6 @@
 <template>
   <label :for="name">{{ caption }}</label>
-  <input type="text" class="input is-primary" maxlength="64" :pattern="validationPattern"
+  <input type="text" class="input" maxlength="32" :pattern="validationPattern"
          :name="name" :id="name" :placeholder="placeholder" :required="!middleName" />
 </template>
 
