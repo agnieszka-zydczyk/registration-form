@@ -1,47 +1,59 @@
 @import 'bulma/css/bulma.css';
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+    height: 130%;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  box-sizing: border-box;
-  font-size: 24px;
+    box-sizing: border-box;
+    font-size: 20px;
 }
 
 body {
-  font-family: Calibri, sans-serif;
+    font-family: Calibri, sans-serif;
 
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-input, button {
-  font-size: inherit;
-  font-family: inherit;
-}
-
-button {
-  padding: 0.2rem 0;
-}
-
-button:hover {
-  transform: scale(1.1);
+input, .button {
+    font-size: inherit;
+    font-family: inherit;
 }
 
 input {
-  padding: 0.25rem 0.5rem;
-  font-size: 125%;
-  max-width: 10rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 125%;
+    max-width: 10rem;
 }
 
-#app{
-  height: 100%;
+input:invalid:required {
+    background-image: linear-gradient(to right, #ffc0c0, rgba(238, 144, 144, 0.3));
+}
+
+h1, label, legend {
+
+}
+ legend::before {
+   content: "*";
+    color: red;
+}
+.button {
+    padding: 0.2rem 0.75rem;
+    color: hsl(179, 50%, 40%);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+#app {
+    height: 100%;
 }
