@@ -59,8 +59,10 @@ export default {
       const pass2 = document.getElementById( 'password-confirm' ).value;
 
       if ( pass1 != pass2 ) {
-        alert( 'Passwords doesn\'t match' );
+        alert( 'Passwords don\'t match' );
         event.preventDefault();
+      } else {
+        alert( 'Form completed properly, submitting...' );
       }
     }
   }
