@@ -1,6 +1,7 @@
 <template>
   <header>
-
+    Agnieszka Żydczyk - Vue 3.0 Sample Registration Form<br />
+    hosted on <a href="http://agnieszka-zydczyk.github.io">http://agnieszka-zydczyk.github.io</a>
   </header>
 
   <main>
@@ -20,5 +21,7 @@ export default {
 </script>
 
 <style>
-
+  header {
+    display: none;
+  }
 </style>
